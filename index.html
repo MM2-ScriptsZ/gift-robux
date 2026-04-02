@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gift Robux</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="badge">Roblox</div>
+        <span>Gift Robux</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#gift-info">About gift</a>
+        <a href="https://www.roblox.com/info/terms" target="_blank" rel="noreferrer">Terms</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Send Robux instantly</p>
+        <h1>Gift Robux to friends on Roblox</h1>
+        <p>Enter a Roblox username to preview the recipient profile and confirm their display name before you send.</p>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-card">
+          <h2>Try a username</h2>
+          <form id="user-form" class="lookup-form">
+            <label for="username">Roblox username</label>
+            <input id="username" name="username" type="text" placeholder="e.g. Roblox" autocomplete="off" required />
+            <button type="submit">Lookup profile</button>
+          </form>
+
+          <div id="status" class="status-message">Search a username to display the Roblox avatar headshot and profile info.</div>
+
+          <div id="profile-card" class="profile-card hidden">
+            <img id="headshot" alt="Roblox headshot" src="" />
+            <div class="profile-details">
+              <div class="profile-line"><span class="label">Display name</span><strong id="display-name"></strong></div>
+              <div class="profile-line"><span class="label">Username</span><strong id="account-name"></strong></div>
+              <a id="profile-link" class="profile-link" href="#" target="_blank" rel="noreferrer">View full Roblox profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section grid-two">
+      <div>
+        <h2>What is Roblox?</h2>
+        <p>Roblox is a global platform where millions create, play, and connect. Robux is the virtual currency used to customize avatars, buy accessories, and access premium experiences.</p>
+      </div>
+      <div>
+        <h2>What is Gift Robux?</h2>
+        <p>This page helps you simulate a gift flow. You can type a username and fetch live Roblox profile details so you can verify the recipient before sending.</p>
+      </div>
+    </section>
+
+    <section id="gift-info" class="section info-block">
+      <h2>Don’t know the person?</h2>
+      <p>If you receive a gift link from someone you do not recognize, do not proceed. Contact <a href="https://www.roblox.com/support" target="_blank" rel="noreferrer">Roblox support</a> for help.</p>
+      <p>Robux is provided by Roblox. When you buy Robux, you receive a limited, non-refundable license to use it. By proceeding, you agree to Roblox’s <a href="https://www.roblox.com/info/terms" target="_blank" rel="noreferrer">Terms of Use</a> and <a href="https://www.roblox.com/info/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>.</p>
+    </section>
+
+    <footer class="footer">
+      <div>©2026 Roblox Corporation</div>
+      <div class="footer-links">
+        <a href="https://www.roblox.com/info/about-us?locale=en_us" target="_blank" rel="noreferrer">About</a>
+        <a href="https://www.roblox.com/info/help?locale=en_us" target="_blank" rel="noreferrer">Help</a>
+        <a href="https://www.roblox.com/giftcards?locale=en_us" target="_blank" rel="noreferrer">Gift Cards</a>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
